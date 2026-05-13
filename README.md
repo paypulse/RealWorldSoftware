@@ -26,7 +26,32 @@ O'REILLY
    - 새로운 기능을 쉽게 추가하거나 기존 기능을 쉽게 제거 할 수 있어야 한다. 
    - 캡슐화가 잘 되어 있어야 한다. 즉, 코드 사용자에게는 세부 구현 내용이 감춰져 있으므로 사용자가 쉽게 코드를 이해 하고 기능을 바꿀 수 있어야 한다. 
    
-이 씨발.. test 코드를 main에 넣고 지랄이야
-DDD로 구현을 해보자 
-checking git hub
-r
+## DDD 구조로 실습예제를 만들어 보자
+# 각 chapter 별로 DDD 구조 
+````
+   ch02/
+    ├── domain/
+    │   ├── Account.java              ← Aggregate Root
+    │   ├── Money.java                ← Value Object
+    │   ├── Transaction.java          ← Entity (입출금 내역)
+    │   └── AccountRepository.java    ← Repository 인터페이스 (Port)
+    │
+    ├── application/
+    │   ├── AccountService.java       ← UseCase 구현
+    │   └── port/
+    │       ├── DepositUseCase.java   ← Input Port
+    │       ├── WithdrawUseCase.java
+    │       └── GetStatementUseCase.java
+    │
+    ├── infrastructure/
+    │   └── InMemoryAccountRepository.java  ← Repository 구현체 (Adapter)
+    │
+    └── interfaces/
+        ├── AccountController.java
+        └── dto/
+            ├── DepositRequest.java
+            ├── WithdrawRequest.java
+            └── AccountStatementResponse.java
+   
+
+````
