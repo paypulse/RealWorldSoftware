@@ -57,7 +57,8 @@ O'REILLY
 ````
     csv 파일 업로드 
         controller -> BankStatementCSVParser (파싱) -> BankStatementAnalyzer (분석) -> BankStatementSummery (결과 반환)
-    DDD 구조로 변경 하기 
+    DDD 구조로 변경 하기
+이상하다... 
 ````
 
 
