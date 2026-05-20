@@ -1,4 +1,4 @@
 package me.shinminjung.ch02.interfaces;
 
-public class AccountController {
+public class BankStatementController {
 }

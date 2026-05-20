@@ -27,9 +27,9 @@ O'REILLY
    - 캡슐화가 잘 되어 있어야 한다. 즉, 코드 사용자에게는 세부 구현 내용이 감춰져 있으므로 사용자가 쉽게 코드를 이해 하고 기능을 바꿀 수 있어야 한다. 
    
 ## DDD 구조로 실습예제를 만들어 보자
-# 각 chapter 별로 DDD 구조 
+# 각 chapter 별로 DDD 구조 예시 
 ````
-   ch02/
+   Example02/
     ├── domain/
     │   ├── Account.java              ← Aggregate Root
     │   ├── Money.java                ← Value Object
@@ -52,6 +52,5 @@ O'REILLY
             ├── DepositRequest.java
             ├── WithdrawRequest.java
             └── AccountStatementResponse.java
-   
-
 ````
+
