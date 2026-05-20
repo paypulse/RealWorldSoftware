@@ -53,4 +53,11 @@ O'REILLY
             ├── WithdrawRequest.java
             └── AccountStatementResponse.java
 ````
+# Chapter 2 입출근 내역 분석기
+````
+    csv 파일 업로드 
+        controller -> BankStatementCSVParser (파싱) -> BankStatementAnalyzer (분석) -> BankStatementSummery (결과 반환)
+````
+
+
 
